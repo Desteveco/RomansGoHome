@@ -11,7 +11,7 @@ public class RomansGoHome {
 				 "CDXLIV", // 444
 				 "CDXXXIX" // 439
 		).stream()
-			.map(RomanNumber::new)
+			.map(RomansNumber::new)
 			.forEach(n -> System.out.println(n.toString() + " = " + n.toDecimal()));
 	}
 }

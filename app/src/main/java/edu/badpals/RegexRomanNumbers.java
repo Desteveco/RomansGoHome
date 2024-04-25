@@ -1,5 +1,6 @@
 package edu.badpals;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class RegexRomanNumbers{
@@ -7,8 +8,8 @@ public class RegexRomanNumbers{
     public Map<String, String> regularExpresions = new HashMap<>(); 
 
     public RegexRomanNumbers(){
-        regularExpresions.put("grupoSumatorio", "(?<!I)[XV](?![LC])|(?<!X)[LC](?!MD)|(?<!C)[MD]|I(?![VX])")
-                        .put("grupoSustractivo", "I[XV]|X[CL]|C[DM]"); 
+        regularExpresions.put("grupoSumatorio", "(?<!I)[XV](?![LC])|(?<!X)[LC](?!MD)|(?<!C)[MD]|I(?![VX])");
+        regularExpresions.put("grupoSustractivo", "(I[XV])|(X[CL])|(C[DM])"); 
     }
 
     
